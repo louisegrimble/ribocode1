@@ -1229,7 +1229,7 @@ const LoadDataRow: React.FC<LoadDataRowProps> = ({
                     type="button"
                     onClick={onFileInputClick}
                     disabled={testMode ? false : fileInputDisabled}
-                    className="msp-btn msp-form-control"
+                    className="btn btn-primary msp-btn msp-form-control"
                     aria-label={fileInputLabel}
                     id={`${idPrefix}-load-btn`}
                 >

@@ -1,0 +1,26 @@
+/* =================================
+   Bootstrap Button Customisations
+   ================================= */
+
+.btn-primary {
+    --bs-btn-bg: #72BEB7;
+    --bs-btn-border-color: #0B2233;
+    --bs-btn-hover-bg: #A5BBCC;
+    --bs-btn-hover-border-color: #0B2233;
+    --bs-btn-active-bg: #2A4C66;
+    --bs-btn-active-border-color: #0B2233;
+}
+
+
+.molecule-visibility-btn.molecule-active {
+    --bs-btn-focus-box-shadow: 0 0 0 0.25rem rgba(var(--bs-primary-rgb), 0.35);
+
+    box-shadow: 0 0 0 0.25rem rgba(var(--bs-primary-rgb), 0.35);
+}
+
+.btn-primary:disabled {
+    background-color: #4a7c77;
+    border-color: #0B2233;
+    opacity: 1;
+    color: #fff;
+}

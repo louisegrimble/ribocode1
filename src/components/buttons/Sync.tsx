@@ -305,7 +305,7 @@ const SyncButton: React.FC<SyncButtonProps> = ({
     return (
         <button
             type="button"
-            className="msp-btn msp-form-control"
+            className="btn btn-primary msp-btn msp-form-control"
             aria-label="Sync"
             aria-pressed={syncEnabled}
             disabled={disabled}
