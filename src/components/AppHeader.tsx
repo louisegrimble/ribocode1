@@ -32,6 +32,7 @@ const AppHeader: React.FC = () => (
       <a href="https://github.com/ribocode-slola/ribocode1/blob/main/UserGuide.md" target="_blank" rel="noopener noreferrer">User Guide</a>
       {')'}
     </h1>
+    <p className="app-subtitle">Ribocode is a ribosome protein structure comparison tool.</p>
   </header>
 );
 
