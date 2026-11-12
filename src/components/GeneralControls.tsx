@@ -100,6 +100,7 @@ const GeneralControls: React.FC<GeneralControlsProps> = ({
       id={idPrefix ? `${idPrefix}-${syncSelectIdSuffix}` : syncSelectIdSuffix}
     />
     <button
+      className="btn btn-primary"
       disabled={!canRealignToSubunits || subunitRealignmentExists}
       onClick={handleRealignToSubunits}
       id={`${idPrefix}-realign-subunit-btn`}
@@ -111,6 +112,7 @@ const GeneralControls: React.FC<GeneralControlsProps> = ({
         : 'Align Subunits'}
     </button>
     <button
+      className="btn btn-primary"
       disabled={!selectedChainIdAlignedTo || !selectedChainIdAligned || realignmentExists}
       onClick={handleRealignToChains}
       id={`${idPrefix}-realign-btn`}
@@ -122,6 +124,7 @@ const GeneralControls: React.FC<GeneralControlsProps> = ({
         : 'Align Chains'}
     </button>
     <button
+      className="btn btn-primary"
       disabled={!canRealignToResidues || residueRealignmentExists}
       onClick={handleRealignToResidues}
       id={`${idPrefix}-realign-residue-btn`}
