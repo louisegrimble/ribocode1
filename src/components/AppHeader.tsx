@@ -82,6 +82,7 @@ const AppHeader: React.FC = () => (
       </a>
       {')'}
     </h1>
+    <p className="app-subtitle">Ribocode is a ribosome protein structure comparison tool.</p>
   </header>
 );
 
