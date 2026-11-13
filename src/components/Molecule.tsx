@@ -297,7 +297,7 @@ const MoleculeUI: React.FC<MoleculeUIProps> = ({
                 <button
                     onClick={() => { void handleToggleAllVisibility(); }}
                     disabled={!plugin || !isLoaded}
-                    className="msp-btn msp-form-control molecule-visibility-btn"
+                    className="btn btn-primary msp-btn msp-form-control molecule-visibility-btn"
                     aria-label={effectiveVisible ? `Hide ${label}` : `Show ${label}`}
                     title={getMoleculeVisibilityTooltip(label, effectiveVisible, isLoaded, !!plugin)}
                     id={idPrefix ? `${idPrefix}-toggle-visibility-btn` : undefined}
@@ -391,7 +391,7 @@ const MoleculeUI: React.FC<MoleculeUIProps> = ({
                                 <div className="rep-btn-group rep-btn-group-row">
                                     <button
                                         onClick={() => onToggleRepVisibility ? onToggleRepVisibility(ref) : handleToggleRepVisibility(ref)}
-                                        className="msp-btn msp-form-control"
+                                        className="btn btn-primary msp-btn msp-form-control"
                                         disabled={!isLoaded}
                                         aria-label={`Toggle visibility for ${typeName} representation`}
                                         title={getRepresentationVisibilityTooltip(datasetName, typeName, repVisible, isLoaded)}

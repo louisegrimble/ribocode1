@@ -64,6 +64,10 @@ import { selectedAtomTypes } from './constants/ribocode';
 import { parseRpNameTableBySpecies } from './utils/rpNameTable';
 import { extractUniProtAccessionsFromText, fetchUniProtGeneNamesBatched, parseChainToMoleculeNameFromCifText, parseChainToUniProtFromCifText, UniProtGeneNameCache } from './utils/uniprot';
 import rpNameTableCsv from '../data/input/RP_name_table_uniprot.csv?raw';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './styles/bootstrap-custom.css';
+import { Container } from 'react-bootstrap';
+
 
 /**
  * The main App component.
@@ -8276,7 +8280,7 @@ const App: React.FC<AppProps> = ({ testForceIsMoleculeAlignedLoaded }) => {
                         sessionMenu={(
                             <div className="session-menu-container" style={{ position: 'relative' }}>
                                 <button
-                                    className="session-menu-btn"
+                                    className="btn btn-primary session-menu-btn"
                                     id="session-menu-btn"
                                     title="Open session actions (Save, Save All, Load, Load All, Reset Local Caches, Restart)."
                                     onClick={e => {
