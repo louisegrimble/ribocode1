@@ -1,0 +1,9 @@
+packages:
+  - packages/*
+allowBuilds:
+  '@parcel/watcher': false
+  '@scarf/scarf': false
+  canvas: false
+  esbuild: true
+  gl: false
+  unrs-resolver: false
